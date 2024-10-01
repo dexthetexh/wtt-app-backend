@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_workout_list">
+
+    <fragment
+        android:id="@+id/nav_workout_list"
+        android:name="com.wtt.wttapp.WorkoutListFragment"
+        android:label="Workout List"
+        tools:layout="@layout/fragment_workout_list" >
+
+
+    <deepLink
+        android:id="@+id/deep_link_workout_list"
+        app:uri="wttapp://workoutlist" />
+
+</fragment>
+    <!-- Add other fragments here if needed -->
+</navigation>
